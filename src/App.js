@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.css";
+import Sidebar from './components/UI/Sidebar'
+import Games from './components/Games/Games'
+const App = () => {
+  const GameData = [
+    { name: "Pong", releaseDate: Date(2021, 5, 26)},
+    { name: "Connect4", releaseDate: Date(2021, 6, 26)},
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Sidebar>
+        <Games games={GameData}/>
+      </Sidebar>
+      
+
     </div>
   );
-}
+};
 
 export default App;

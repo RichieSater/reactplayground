@@ -1,0 +1,7 @@
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background-color: rgba(17, 2, 112, 0.85);
+    font-size: 1.05em;
+  }
